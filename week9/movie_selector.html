@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS-Week8-Homework</title>
+</head>
+
+<body>
+    <form id="searchForm">
+        <div>
+            <label>
+                <input type="radio" name="selectedTag" value="All" checked> All
+            </label>
+            <select name="selectedDecades">
+                  <option value="null" selected="selected" >All Movies</option>
+                  <option value="1900" >1900s</option>
+                  <option value="1910">1910s</option>
+                  <option value="1920">1920s</option>
+                  <option value="1930">1930s</option>
+                  <option value="1940">1940s</option>
+                  <option value="1950">1950s</option>
+                  <option value="1960">1960s</option>
+                  <option value="1970">1970s</option>
+                  <option value="1980">1980s</option>
+                  <option value="1990">1990s</option>
+                  <option value="2000">2000s</option>
+                  <option value="2010">2010s</option>
+            </select>
+            <label>
+                <input type="radio" name="selectedTag" value="Excellent"> Excellent
+            </label>
+            <label>
+                <input type="radio" name="selectedTag" value="Very Good"> Very Good
+            </label>
+            <label>
+                <input type="radio" name="selectedTag" value="Good"> Good
+            </label>
+        </div>
+        <div>
+            <input type="text" name="searchText">
+            <button type="submit">Search</button>
+            
+        </div>
+
+    </form>
+
+    
+         <select id="sortedFactor">
+                  <option value="null" selected="selected"> Sort movies</option>
+                  <option value="title">Title</option>
+                  <option value="year">Year</option>
+                  <option value="rating">Rating</option>
+        </select>
+
+    </form>
+
+    <p id="searchCount" style="display: none"></p>
+
+    <table id="moviesList" style="display: none" border="1">
+        <thead>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Rating</th>
+            <th>Votes</th>
+            <th>Tag</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+
+<script type="text/javascript" src="function.js"></script>
+
+</html>
